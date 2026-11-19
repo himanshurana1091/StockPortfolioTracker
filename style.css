@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header p {
+    margin-top: 8px;
+    color: #cbd5e1;
+}
+
+main {
+    width: 95%;
+    max-width: 1300px;
+    margin: 30px auto;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+.card h3 {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #2563eb;
+}
+
+.form-section,
+.table-section {
+    background: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+input {
+    flex: 1;
+    min-width: 140px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 14px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+th {
+    background: #eff6ff;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #991b1b;
+}
+
+@media (max-width: 800px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .table-section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 850px;
+    }
+}
+
+@media (max-width: 450px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
